@@ -8,7 +8,9 @@ public class HelloWorld {
         Player p2 = new Player("Monika", 13);        
 
         p1.printPlayerInfo();
-        p2.printPlayerInfo();    
+        p1.setName("Max");
+        p1.printPlayerInfo();    
+        System.out.println(p1.getNumberOfCards());
 
     }
 }
