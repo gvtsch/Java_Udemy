@@ -17,13 +17,18 @@ public class HelloWorld {
         /* Autos */
         Car c1 = new Car("BMW", 250);
         c1.drive();
-        c1.numberOfCars = 1;
-
+        
         Car c2 = new Car("Fiat");
         c2.drive();
 
+        // c2.prepareForDrive();
+
+        c1.numberOfCars = 1;
         System.out.println(c1.numberOfCars);
         System.out.println(c2.numberOfCars);
+
+        /** Singleton-Pattern: Workshop */
+        CarWorkshop a = CarWorkshop.getInstance();
         
     }
 }
