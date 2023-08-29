@@ -1,6 +1,6 @@
 package wahlschwabe;
 
-public class Bike implements Driveable {
+public class Bike extends Driveable {
 
     
     public void drive() {

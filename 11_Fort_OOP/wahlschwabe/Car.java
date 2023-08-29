@@ -1,6 +1,6 @@
 package wahlschwabe;
 
-public class Car implements Driveable, Comparable<Car> {
+public class Car extends Driveable implements Comparable<Car> {
 
     private String brand;
     private int hp;
@@ -53,5 +53,22 @@ public class Car implements Driveable, Comparable<Car> {
     @Override
     public String toString(){
         return brand + ": " + hp;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Car)) {
+            return false;
+        }
+        Car other = (Car) o;
+
+        if (brand.equals(other.getBrand()) && hp == other.getHp()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

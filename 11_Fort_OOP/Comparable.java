@@ -24,5 +24,10 @@ public class Comparable {
         for (Car car : cars) {
             System.out.println(car);
         }
+
+        Car car1 = new Car("ABC", 150);
+        Car car2 = new Car("ABC", 150);
+        System.out.println(car1 == car2);
+        System.out.println(car1.equals(car2));
     }
 }

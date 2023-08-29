@@ -1,6 +1,11 @@
 package wahlschwabe;
 
-public interface Driveable {
+public abstract class Driveable {
     
-    public void drive();
+    abstract public void drive();
+    public void driveToBerlin() {
+        for (int x = 0; x < 10; x++) {
+            drive();
+        }
+    }
 }
